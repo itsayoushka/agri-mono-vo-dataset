@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this dataset or software, please cite the paper below."
+title: "[DATASET NAME]"
+type: dataset
+authors:
+  - family-names: "[FAMILY NAME]"
+    given-names: "[GIVEN NAMES]"
+    affiliation: "[AFFILIATION]"
+    orcid: "https://orcid.org/[ORCID]"
+license: CC-BY-NC-SA-4.0
+repository-code: "[GITHUB_URL]"
+url: "[MARV_DATASET_URL]"
+identifiers:
+  - type: doi
+    value: "[DATASET_DOI]"
+    description: "Dataset DOI"
+keywords:
+  - agricultural robotics
+  - monocular visual odometry
+  - ROS 2
+  - dataset
+preferred-citation:
+  type: article
+  title: "[PAPER TITLE]"
+  authors:
+    - family-names: "[FAMILY NAME]"
+      given-names: "[GIVEN NAMES]"
+  journal: "[VENUE]"
+  year: 0000
+  doi: "[PAPER_DOI]"
