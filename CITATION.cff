@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this dataset or software, please cite the paper below."
-title: "[DATASET NAME]"
+title: "GS-AgriField"
 type: dataset
 authors:
   - family-names: "[FAMILY NAME]"

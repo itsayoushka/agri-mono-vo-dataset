@@ -1,9 +1,9 @@
-# [DATASET NAME]: Monocular Visual Odometry in Agricultural Environments
+# GS-AgriField: Monocular Visual Odometry in Agricultural Environments
 
 > **Status:** in preparation. The dataset links, paper reference and DOI will
 > be added at publication.
 
-This repository accompanies the paper *[PAPER TITLE]* ([VENUE], [YEAR]).
+This repository accompanies the **GS-AgriField** dataset and the paper *[PAPER TITLE]* ([VENUE], [YEAR]).
 It contains documentation and utilities to:
 
 1. **download** the raw ROS 2 bags (MCAP) from the MARV Robotics server, and
