@@ -3,7 +3,7 @@
 > **Status:** in preparation. The dataset links, paper reference and DOI will
 > be added at publication.
 
-This repository accompanies the **GS-AgriField** dataset and the paper *[PAPER TITLE]* ([VENUE], [YEAR]).
+This repository accompanies the **GS-AgriField** dataset and the paper *GS-AgriField: A dataset and benchmark for visual localization of an agricultural robot in row crops* (submitted to The International Journal of Robotics Research, 2026).
 It contains documentation and utilities to:
 
 1. **download** the raw ROS 2 bags (MCAP) from the MARV Robotics server, and
@@ -18,6 +18,10 @@ The datasets themselves are **not** stored in this repository.
 **➡️ [Download the dataset on MARV Robotics]([MARV_DATASET_URL])**
 
 The data is hosted on a MARV Robotics server in Clermont-Ferrand, France.
+
+**Access.** Access to the dataset is free. A request form will be online soon:
+it will send the MARV access link and credentials automatically by email,
+without manual approval.
 
 | Sequence | Environment | MARV link | Size |
 |----------|-------------|-----------|------|
@@ -112,12 +116,12 @@ convention.
 If you use this dataset, please cite:
 
 ```bibtex
-@article{[CITATION_KEY],
-  title   = {[PAPER TITLE]},
-  author  = {[AUTHORS]},
-  journal = {[VENUE]},
-  year    = {[YEAR]},
-  doi     = {[DOI]}
+@article{dalah2026gsagrifield,
+  title   = {{GS-AgriField}: A dataset and benchmark for visual localization of an agricultural robot in row crops},
+  author  = {Dalah, Aya and Alwan, Salwan and Debain, Christophe and Laneurit, Jean},
+  journal = {The International Journal of Robotics Research},
+  year    = {2026},
+  note    = {Submitted}
 }
 ```
 
