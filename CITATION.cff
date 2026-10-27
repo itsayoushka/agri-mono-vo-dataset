@@ -3,17 +3,21 @@ message: "If you use this dataset or software, please cite the paper below."
 title: "GS-AgriField"
 type: dataset
 authors:
-  - family-names: "[FAMILY NAME]"
-    given-names: "[GIVEN NAMES]"
-    affiliation: "[AFFILIATION]"
-    orcid: "https://orcid.org/[ORCID]"
+  - family-names: "Dalah"
+    given-names: "Aya"
+    affiliation: "INRAE, TSCF; Cyclair SAS"
+  - family-names: "Alwan"
+    given-names: "Salwan"
+    affiliation: "Cyclair SAS"
+  - family-names: "Debain"
+    given-names: "Christophe"
+    affiliation: "INRAE, TSCF"
+  - family-names: "Laneurit"
+    given-names: "Jean"
+    affiliation: "INRAE, TSCF"
 license: CC-BY-NC-SA-4.0
-repository-code: "[GITHUB_URL]"
-url: "[MARV_DATASET_URL]"
-identifiers:
-  - type: doi
-    value: "[DATASET_DOI]"
-    description: "Dataset DOI"
+repository-code: "https://github.com/itsayoushka/agri-mono-vo-dataset"
+url: "https://marv.mesocentre.uca.fr/?filter=#/collection/cyclair"
 keywords:
   - agricultural robotics
   - monocular visual odometry
@@ -21,10 +25,16 @@ keywords:
   - dataset
 preferred-citation:
   type: article
-  title: "[PAPER TITLE]"
+  title: "GS-AgriField: A dataset and benchmark for visual localization of an agricultural robot in row crops"
   authors:
-    - family-names: "[FAMILY NAME]"
-      given-names: "[GIVEN NAMES]"
-  journal: "[VENUE]"
-  year: 0000
-  doi: "[PAPER_DOI]"
+    - family-names: "Dalah"
+      given-names: "Aya"
+    - family-names: "Alwan"
+      given-names: "Salwan"
+    - family-names: "Debain"
+      given-names: "Christophe"
+    - family-names: "Laneurit"
+      given-names: "Jean"
+  journal: "The International Journal of Robotics Research"
+  year: 2026
+  notes: "Submitted"

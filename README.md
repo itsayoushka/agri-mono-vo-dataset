@@ -1,7 +1,6 @@
 # GS-AgriField: Monocular Visual Odometry in Agricultural Environments
 
-> **Status:** in preparation. The dataset links, paper reference and DOI will
-> be added at publication.
+> **Status:** the paper is under review. The DOI will be added at publication.
 
 This repository accompanies the **GS-AgriField** dataset and the paper *GS-AgriField: A dataset and benchmark for visual localization of an agricultural robot in row crops* (submitted to The International Journal of Robotics Research, 2026).
 It contains documentation and utilities to:
@@ -15,7 +14,7 @@ The datasets themselves are **not** stored in this repository.
 
 ## Download Dataset
 
-**➡️ [Download the dataset on MARV Robotics]([MARV_DATASET_URL])**
+**➡️ [Download the dataset on MARV Robotics](https://marv.mesocentre.uca.fr/?filter=#/collection/cyclair)**
 
 The data is hosted on a MARV Robotics server in Clermont-Ferrand, France.
 
@@ -23,9 +22,21 @@ The data is hosted on a MARV Robotics server in Clermont-Ferrand, France.
 it will send the MARV access link and credentials automatically by email,
 without manual approval.
 
-| Sequence | Environment | MARV link | Size |
-|----------|-------------|-----------|------|
-| [SEQUENCE_NAME] | [ENVIRONMENT] | [MARV_LINK] | [SIZE] |
+| Seq. | Bag name | Crop | BBCH | Speed | Date |
+|------|----------|------|------|-------|------|
+| 01 | `vo_dataset_2026-06-08_pressac_sugarbeet_bbch19+_fast_run001` | sugar beet | 19+ | fast | 2026-06-08 |
+| 02 | `vo_dataset_2026-06-08_pressac_maize_bbch14_nominal_run001` | maize | 14 | nominal | 2026-06-08 |
+| 03 | `vo_dataset_2026-06-08_pressac_maize_bbch14_fast_run002` | maize | 14 | fast | 2026-06-08 |
+| 04 | `vo_dataset_2026-06-08_pressac_maize_bbch14-15_fast_run003` | maize | 14-15 | fast | 2026-06-08 |
+| 05 | `vo_dataset_2026-06-16_pressac_maize_bbch12_fast_run001` | maize | 12 | fast | 2026-06-16 |
+| 06 | `vo_dataset_2026-06-16_pressac_maize_bbch12_nominal_run001` | maize | 12 | nominal | 2026-06-16 |
+| 07 | `vo_dataset_2026-06-16_pressac_maize_bbch18_fast_run001` | maize | 18 | fast | 2026-06-16 |
+| 08 | `vo_dataset_2026-06-16_pressac_sunflower_bbch10_fast_run001` | sunflower | 10 | fast | 2026-06-16 |
+| 09 | `vo_dataset_2026-07-08_pressac_maize_bbch19+_fast_run001` | maize | 19+ | fast | 2026-07-08 |
+| 10 | `vo_dataset_2026-07-08_pressac_maize_bbch19+_fast_run002` | maize | 19+ | fast | 2026-07-08 |
+| 11 | `vo_dataset_2026-07-08_pressac_sunflower_bbch19+_fast_run001` | sunflower | 19+ | fast | 2026-07-08 |
+
+Each sequence has its own download page in the MARV collection.
 
 To fetch a sequence from the command line, see [docs/download.md](docs/download.md).
 
@@ -33,9 +44,17 @@ To fetch a sequence from the command line, see [docs/download.md](docs/download.
 
 ## Dataset Overview
 
-> **TODO:** describe the environments, crops and growth stages, robot platform,
-> sensors, acquisition dates, number of sequences, total duration/length, and
-> ground-truth source and accuracy. Only report values from the paper.
+GS-AgriField was recorded by two Cyclair GS weeding robots, four-wheel
+independently steered and driven, during their normal weeding work in maize,
+sunflower and sugar beet fields at Pressac (Nouvelle-Aquitaine, France), on
+8 June, 16 June and 8 July 2026. The growth stages range from emergence
+(BBCH 10–12) to nine or more unfolded leaves (BBCH 19+).
+
+- **11 sequences**, 61 minutes and 1.9 km in total, about 540 GB of ROS 2 MCAP recordings.
+- **Camera:** forward-looking Lucid Vision Labs Triton HDR camera (Sony IMX490),
+  rectified 2880 × 1860 color images (5.4 MP) at 10 Hz, with calibration.
+- **Reference trajectory:** SBG Systems Ellipse-D GNSS-aided INS with dual-antenna RTK GNSS.
+- **Proprioception:** inertial measurements and wheel steering and traction feedback.
 
 Each sequence is a ROS 2 bag (MCAP storage). The topics used by the KITTI-like
 converter are:
@@ -129,11 +148,19 @@ See also [CITATION.cff](CITATION.cff).
 
 ## Affiliations and Acknowledgements
 
-> **TODO:** list the author affiliations, funding sources and project
-> acknowledgements.
+Aya Dalah<sup>1,2</sup>, Salwan Alwan<sup>2</sup>, Christophe Debain<sup>1</sup> and Jean Laneurit<sup>1</sup>
+
+1. INRAE, Technologies and Information Systems for Agroecosystems, Clermont-Ferrand, France
+2. Cyclair SAS, Poitiers, France
+
+This work was supported by a CIFRE PhD fellowship funded by the ANRT
+(Association Nationale de la Recherche et de la Technologie) and conducted in
+collaboration with Cyclair SAS. It has been partially supported by ROBOTEX 2.0,
+the French Infrastructure in Robotics, under the grants ROBOTEX (EQUIPEX
+ANR-10-EQPX-44-01) and TIRREX (EQUIPEX+ grant ANR-21-ESRE-0015).
 
 Data hosting: MARV Robotics server, Clermont-Ferrand, France.
 
 ## Contact
 
-[CONTACT NAME / EMAIL]
+Aya Dalah, aya.dalah@cyclair.fr
