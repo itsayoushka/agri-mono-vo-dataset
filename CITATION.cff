@@ -24,7 +24,7 @@ keywords:
   - ROS 2
   - dataset
 preferred-citation:
-  type: article
+  type: unpublished
   title: "GS-AgriField: A dataset and benchmark for visual localization of an agricultural robot in row crops"
   authors:
     - family-names: "Dalah"
@@ -35,6 +35,5 @@ preferred-citation:
       given-names: "Christophe"
     - family-names: "Laneurit"
       given-names: "Jean"
-  journal: "The International Journal of Robotics Research"
   year: 2026
-  notes: "Submitted"
+  notes: "Manuscript in preparation"

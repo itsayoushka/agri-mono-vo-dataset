@@ -1,8 +1,10 @@
 # GS-AgriField: Monocular Visual Odometry in Agricultural Environments
 
-> **Status:** the paper is under review. The DOI will be added at publication.
+> **Status:** the paper describing the dataset is about to be submitted. Until it
+> is published, please cite it as the manuscript below; the reference will be
+> updated after publication.
 
-This repository accompanies the **GS-AgriField** dataset and the paper *GS-AgriField: A dataset and benchmark for visual localization of an agricultural robot in row crops* (submitted to The International Journal of Robotics Research, 2026).
+This repository accompanies the **GS-AgriField** dataset and the paper *GS-AgriField: A dataset and benchmark for visual localization of an agricultural robot in row crops*.
 It contains documentation and utilities to:
 
 1. **download** the raw ROS 2 bags (MCAP) from the MARV Robotics server, and
@@ -135,12 +137,12 @@ convention.
 If you use this dataset, please cite:
 
 ```bibtex
-@article{dalah2026gsagrifield,
-  title   = {{GS-AgriField}: A dataset and benchmark for visual localization of an agricultural robot in row crops},
-  author  = {Dalah, Aya and Alwan, Salwan and Debain, Christophe and Laneurit, Jean},
-  journal = {The International Journal of Robotics Research},
-  year    = {2026},
-  note    = {Submitted}
+@misc{dalah2026gsagrifield,
+  title  = {{GS-AgriField}: A dataset and benchmark for visual localization of an agricultural robot in row crops},
+  author = {Dalah, Aya and Alwan, Salwan and Debain, Christophe and Laneurit, Jean},
+  year   = {2026},
+  note   = {Manuscript in preparation},
+  url    = {https://github.com/itsayoushka/agri-mono-vo-dataset}
 }
 ```
 
